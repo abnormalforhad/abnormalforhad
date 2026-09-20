@@ -1,6 +1,7 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/stfu911/stfu911/main/header.svg" alt="stfu'-' banner" width="100%" />
+  <img src="https://raw.githubusercontent.com/stfu911/stfu911/main/hero.png" alt="finally, you found me" width="100%" style="border-radius: 8px;" />
 </p>
+
 
 ```bash
 # SYSTEM TELEMETRY
