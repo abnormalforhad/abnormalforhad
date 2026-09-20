@@ -2,6 +2,9 @@
   <img src="https://raw.githubusercontent.com/stfu911/stfu911/main/hero.png" alt="finally, you found me" width="100%" style="border-radius: 8px;" />
 </p>
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/stfu911/stfu911/main/audiotrack.svg" alt="0xAF Audio Telemetry" width="100%" />
+</p>
 
 ```bash
 # SYSTEM TELEMETRY
@@ -10,6 +13,15 @@
 [CONSENSUS]     GenLayer AI Validator Mesh · EVM · Monad · Stacks · Circle Arc
 [CRYPTO]        Shamir (3,4) Threshold DKG over GF(256) · AES-256-GCM · EIP-6963
 [STATUS]        Shipping confidential primitives & on-chain execution engines
+```
+
+```bash
+$ curl -sL https://raw.githubusercontent.com/stfu911/stfu911/main/identity.json | jq .primitives
+{
+  "threshold_dkg": "Shamir (3,4) over GF(256)",
+  "cipher": "WebCrypto AES-256-GCM",
+  "consensus": "GenLayer AI Validator Consensus"
+}
 ```
 
 ---

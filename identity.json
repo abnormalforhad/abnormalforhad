@@ -1,0 +1,24 @@
+{
+  "operator": "stfu'-'",
+  "node": "stfu911",
+  "status": "ONLINE",
+  "domain": [
+    "Applied Cryptography",
+    "Intelligent Contracts",
+    "On-Chain Execution Engines"
+  ],
+  "primitives": {
+    "threshold_dkg": "Shamir (3,4) over GF(256)",
+    "cipher": "WebCrypto AES-256-GCM",
+    "consensus": "GenLayer AI Validator Consensus"
+  },
+  "networks": [
+    "Ethereum Sepolia",
+    "Circle Arc",
+    "Monad",
+    "Stacks"
+  ],
+  "flagship": "https://github.com/stfu911/interfold-e3-auction",
+  "repos_active": 99,
+  "quote": "Autonomous systems, verifiable compute, and unyielding code."
+}
