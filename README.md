@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./header.svg" alt="abnormalforhad banner" width="100%" />
+  <img src="https://raw.githubusercontent.com/abnormalforhad/abnormalforhad/main/header.svg" alt="abnormalforhad banner" width="100%" />
 </p>
 
 ```bash
