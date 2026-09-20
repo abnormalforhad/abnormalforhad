@@ -27,14 +27,6 @@
       <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#1f293d" stroke-width="0.75" stroke-opacity="0.55"/>
       <circle cx="24" cy="24" r="0.8" fill="#38bdf8" fill-opacity="0.3"/>
     </pattern>
-
-    <filter id="subtleGlow" x="-10%" y="-10%" width="120%" height="120%">
-      <feGaussianBlur stdDeviation="2" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
   </defs>
 
   <style>
@@ -74,38 +66,41 @@
   </g>
 
   <!-- Main Left Block: Hero Identity -->
-  <g transform="translate(32, 60)">
-    <text x="0" y="18" fill="#58a6ff" font-size="11" class="mono" font-weight="600" letter-spacing="2">INFRASTRUCTURE ARCHITECT // WEB3 &amp; CRYPTO</text>
+  <g transform="translate(36, 56)">
+    <text x="0" y="16" fill="#58a6ff" font-size="11" class="mono" font-weight="600" letter-spacing="1.5">INFRASTRUCTURE ARCHITECT // WEB3 &amp; CRYPTO</text>
     
-    <text x="0" y="58" fill="#f0f6fc" font-size="32" font-weight="800" class="sans" letter-spacing="-0.8">
+    <text x="0" y="52" fill="#f0f6fc" font-size="30" font-weight="800" class="sans" letter-spacing="-0.5">
       abnormalforhad
     </text>
 
-    <text x="0" y="86" fill="#8b949e" font-size="13" class="mono">
-      Threshold Cryptography <tspan fill="#38bdf8">◈</tspan> GenLayer Intelligent Contracts <tspan fill="#34d399">◈</tspan> Execution Engines
+    <text x="0" y="78" fill="#8b949e" font-size="12" class="mono">
+      Threshold Cryptography <tspan fill="#38bdf8">◈</tspan> Intelligent Contracts
+    </text>
+    <text x="0" y="98" fill="#6e7681" font-size="11" class="mono">
+      Zero-Knowledge Primitives <tspan fill="#34d399">◈</tspan> Execution Engines
     </text>
   </g>
 
   <!-- Right Decorative Telemetry Panel -->
-  <g transform="translate(540, 56)">
-    <rect width="330" height="126" rx="6" fill="#0d1117" fill-opacity="0.95" stroke="#30363d" stroke-width="1"/>
+  <g transform="translate(530, 52)">
+    <rect width="336" height="132" rx="6" fill="#0d1117" fill-opacity="0.95" stroke="#30363d" stroke-width="1"/>
     
     <path d="M 0 0 L 12 0 L 0 12 Z" fill="#38bdf8" opacity="0.6"/>
     
-    <text x="16" y="24" fill="#6e7681" font-size="10" class="mono">PRIMITIVE</text>
-    <text x="96" y="24" fill="#e6edf3" font-size="10" font-weight="600" class="mono">Shamir (3,4) DKG / GF(256)</text>
+    <text x="16" y="26" fill="#6e7681" font-size="10" class="mono">PRIMITIVE</text>
+    <text x="96" y="26" fill="#e6edf3" font-size="10" font-weight="600" class="mono">Shamir (3,4) DKG / GF(256)</text>
 
-    <text x="16" y="48" fill="#6e7681" font-size="10" class="mono">CONSENSUS</text>
-    <text x="96" y="48" fill="#58a6ff" font-size="10" font-weight="600" class="mono">GenLayer AI Validator Mesh</text>
+    <text x="16" y="50" fill="#6e7681" font-size="10" class="mono">CONSENSUS</text>
+    <text x="96" y="50" fill="#58a6ff" font-size="10" font-weight="600" class="mono">GenLayer AI Validator Mesh</text>
 
-    <text x="16" y="72" fill="#6e7681" font-size="10" class="mono">CIPHER</text>
-    <text x="96" y="72" fill="#3fb950" font-size="10" font-weight="600" class="mono">WebCrypto AES-256-GCM + EIP-6963</text>
+    <text x="16" y="74" fill="#6e7681" font-size="10" class="mono">CIPHER</text>
+    <text x="96" y="74" fill="#3fb950" font-size="10" font-weight="600" class="mono">WebCrypto AES-256-GCM + EIP-6963</text>
 
-    <text x="16" y="96" fill="#6e7681" font-size="10" class="mono">CROSS-CHAIN</text>
-    <text x="96" y="96" fill="#d29922" font-size="10" font-weight="600" class="mono">Circle CCTP · Sepolia · Arc · Monad</text>
+    <text x="16" y="98" fill="#6e7681" font-size="10" class="mono">CROSS-CHAIN</text>
+    <text x="96" y="98" fill="#d29922" font-size="10" font-weight="600" class="mono">Circle CCTP · Sepolia · Arc · Monad</text>
 
-    <text x="16" y="118" fill="#6e7681" font-size="9" class="mono">STATE</text>
-    <text x="96" y="118" fill="#7ee787" font-size="9" class="mono">98+ public repositories active</text>
+    <text x="16" y="120" fill="#6e7681" font-size="9" class="mono">STATE</text>
+    <text x="96" y="120" fill="#7ee787" font-size="9" class="mono">98+ public repositories active</text>
   </g>
 
   <!-- Glowing Accent Horizon -->
