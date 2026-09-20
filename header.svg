@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 210" width="100%" height="100%">
+  <defs>
+    <linearGradient id="canvasGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07090e"/>
+      <stop offset="50%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#0a0e14"/>
+    </linearGradient>
+
+    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#00f2fe"/>
+    </linearGradient>
+
+    <linearGradient id="neonMint" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+
+    <linearGradient id="horizonGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#38bdf8" stop-opacity="0.6"/>
+      <stop offset="75%" stop-color="#34d399" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#34d399" stop-opacity="0"/>
+    </linearGradient>
+
+    <pattern id="matrixGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#1f293d" stroke-width="0.75" stroke-opacity="0.55"/>
+      <circle cx="24" cy="24" r="0.8" fill="#38bdf8" fill-opacity="0.3"/>
+    </pattern>
+
+    <filter id="subtleGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, 'SF Mono', 'Cascadia Code', 'Segoe UI Mono', Monaco, Menlo, Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif; }
+    .pulse { animation: pulseAnim 2.4s infinite ease-in-out; }
+    @keyframes pulseAnim {
+      0%, 100% { opacity: 0.9; transform: scale(1); }
+      50% { opacity: 0.35; transform: scale(0.9); }
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="900" height="210" rx="10" fill="url(#canvasGrad)"/>
+  <rect width="900" height="210" rx="10" fill="url(#matrixGrid)"/>
+
+  <!-- Border Outline -->
+  <rect width="898" height="208" x="1" y="1" rx="9" fill="none" stroke="#21262d" stroke-width="1.2"/>
+
+  <!-- Top Bar Terminal Window Style -->
+  <rect width="900" height="36" rx="10" fill="#161b22" fill-opacity="0.7"/>
+  <rect width="900" height="1" y="36" fill="#30363d"/>
+
+  <!-- Window Dots -->
+  <circle cx="24" cy="18" r="4.5" fill="#f85149" opacity="0.85"/>
+  <circle cx="40" cy="18" r="4.5" fill="#d29922" opacity="0.85"/>
+  <circle cx="56" cy="18" r="4.5" fill="#2ea043" opacity="0.85"/>
+
+  <!-- Terminal Title Bar -->
+  <text x="80" y="22" fill="#8b949e" font-size="11" class="mono" font-weight="500">abnormalforhad // e3-node-01 [mainnet-bridge]</text>
+
+  <!-- Status indicator badge -->
+  <g transform="translate(800, 10)">
+    <rect width="82" height="16" rx="8" fill="#042718" stroke="#238636" stroke-width="0.8"/>
+    <circle cx="12" cy="8" r="3" fill="#3fb950" class="pulse"/>
+    <text x="22" y="11.5" fill="#3fb950" font-size="9" font-weight="700" class="mono" letter-spacing="0.5">ONLINE</text>
+  </g>
+
+  <!-- Main Left Block: Hero Identity -->
+  <g transform="translate(32, 60)">
+    <text x="0" y="18" fill="#58a6ff" font-size="11" class="mono" font-weight="600" letter-spacing="2">INFRASTRUCTURE ARCHITECT // WEB3 &amp; CRYPTO</text>
+    
+    <text x="0" y="58" fill="#f0f6fc" font-size="32" font-weight="800" class="sans" letter-spacing="-0.8">
+      abnormalforhad
+    </text>
+
+    <text x="0" y="86" fill="#8b949e" font-size="13" class="mono">
+      Threshold Cryptography <tspan fill="#38bdf8">◈</tspan> GenLayer Intelligent Contracts <tspan fill="#34d399">◈</tspan> Execution Engines
+    </text>
+  </g>
+
+  <!-- Right Decorative Telemetry Panel -->
+  <g transform="translate(540, 56)">
+    <rect width="330" height="126" rx="6" fill="#0d1117" fill-opacity="0.95" stroke="#30363d" stroke-width="1"/>
+    
+    <path d="M 0 0 L 12 0 L 0 12 Z" fill="#38bdf8" opacity="0.6"/>
+    
+    <text x="16" y="24" fill="#6e7681" font-size="10" class="mono">PRIMITIVE</text>
+    <text x="96" y="24" fill="#e6edf3" font-size="10" font-weight="600" class="mono">Shamir (3,4) DKG / GF(256)</text>
+
+    <text x="16" y="48" fill="#6e7681" font-size="10" class="mono">CONSENSUS</text>
+    <text x="96" y="48" fill="#58a6ff" font-size="10" font-weight="600" class="mono">GenLayer AI Validator Mesh</text>
+
+    <text x="16" y="72" fill="#6e7681" font-size="10" class="mono">CIPHER</text>
+    <text x="96" y="72" fill="#3fb950" font-size="10" font-weight="600" class="mono">WebCrypto AES-256-GCM + EIP-6963</text>
+
+    <text x="16" y="96" fill="#6e7681" font-size="10" class="mono">CROSS-CHAIN</text>
+    <text x="96" y="96" fill="#d29922" font-size="10" font-weight="600" class="mono">Circle CCTP · Sepolia · Arc · Monad</text>
+
+    <text x="16" y="118" fill="#6e7681" font-size="9" class="mono">STATE</text>
+    <text x="96" y="118" fill="#7ee787" font-size="9" class="mono">98+ public repositories active</text>
+  </g>
+
+  <!-- Glowing Accent Horizon -->
+  <line x1="40" y1="198" x2="860" y2="198" stroke="url(#horizonGlow)" stroke-width="2"/>
+</svg>
