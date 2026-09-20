@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/abnormalforhad/abnormalforhad/main/header.svg" alt="abnormalforhad banner" width="100%" />
+  <img src="https://raw.githubusercontent.com/abnormalforhad/abnormalforhad/main/header.svg" alt="stfu'-' banner" width="100%" />
 </p>
 
 ```bash
 # SYSTEM TELEMETRY
-[NODE]          abnormalforhad // 0xAF_CORE
+[NODE]          stfu'-' // 0xAF_CORE
 [ROLE]          Systems Architect · Applied Cryptography · Intelligent Contracts
 [CONSENSUS]     GenLayer AI Validator Mesh · EVM · Monad · Stacks · Circle Arc
 [CRYPTO]        Shamir (3,4) Threshold DKG over GF(256) · AES-256-GCM · EIP-6963
